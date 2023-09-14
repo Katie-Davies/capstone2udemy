@@ -1,1 +1,22 @@
-/*  */
+/*  headers: font-family: 'Playfair Display', serif;
+main text: font-family: 'Raleway', sans-serif; */
+
+
+
+#top-container {
+    display: flex;
+    justify-content: center;
+    background: url(./assets/hero1.jpeg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:0px 0px;  
+     }
+
+/*
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 100px 100px 100px 100px; 
+}
+*/
+
+
