@@ -1,42 +1,85 @@
 /*  headers: font-family: 'Playfair Display', serif;
-main text: font-family: 'Raleway', sans-serif; */
+main text: font-family: 'Raleway', sans-serif; 
+
+d5bdaf
+green : a3b18a
+pink : f3dad8
+dark pink: c78283
+dark brown: a27965
+*/
 
 h1 {
     font-family: 'Playfair Display', serif; 
-    font-size: 2rem;
+    font-size: 6vh;
+}
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vh;
 }
 
 #top-container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     background: url(./assets/topcontainer.png);
     background-size:cover;
     background-repeat:no-repeat;
     background-position:0px 0px; 
     height: 100vh; 
+}
+
+#second-container {
+    display: flex;
+    justify-content: left;
+    background-color: white;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:0px 0px;  
+    height: 100vh;
      }
+
 
 .container1 {
     display: grid;
-    grid-template-columns: repeat(5, 200px);
-    grid-template-rows: repeat(5, 200px); 
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 0.5fr 0.5fr 1fr; 
 }
 
-.name {
+#name {
     grid-area: 2 / 1 / 3 / 3;
     text-align: left;
-    color: white;
+    color: #84997c;
+    margin: 50px;  
+}
+#hero {
+    grid-area: 3 / 1 / 5 / 3;
+    margin: 50px;
+    color: #8c6c5f;
+    font-weight: bold;
+    align-self: start;
+    margin-top: 0;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 15%) ;
+}
+#teacher {
+    grid-area: 1 / span 2;
+    margin: 50px;
     
 }
-
-.photo1 {
-
+#apple {
+    grid-row-start: 1;
+    grid-column-start: 3;
+    margin-top: 50px;
+    justify-self: center;
+    margin-top: 50px;
 }
+
 
 @media screen (max-width: 800px){
     #top-container { 
         width: 100%; }
-    h1 {
-        font-size: 1rem;
-    }
+   
 }
