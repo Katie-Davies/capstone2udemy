@@ -66,14 +66,14 @@ p {
 }
 #teacher {
     grid-area: 1 / span 2;
-    margin: 50px;
+    margin: 25px;
     
 }
 #apple {
     grid-row-start: 1;
     grid-column-start: 3;
     margin-top: 50px;
-    justify-self: center;
+    justify-self: left;
     margin-top: 50px;
 }
 
