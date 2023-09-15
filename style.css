@@ -28,7 +28,7 @@ p {
 }
 .container1 {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 1fr 0.5fr 0.5fr 1fr; 
 }
 #name {
@@ -61,24 +61,24 @@ p {
 
 .container2 {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    grid-template-rows: repeat(2, 100px);
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 50px, 100px;
     justify-content: center;
 }
 #teacher {
-    grid-area: 1 / span 2;
+    grid-area: 1 / 1;
     margin: 25px;
     
 }
 #apple {
     grid-row-start: 1;
-    grid-column-start: 3;
+    grid-column-start: 2;
     margin-top: 50px;
-    justify-self: left;
+    justify-self: start;
     margin-top: 25px;
 }
 #teacher-info {
-    grid-area: 2 / 1 / 4 / 4;
+    grid-area: 2 / 1 / 4 / 3;
     margin-left: 25px;
     
 }
@@ -90,28 +90,31 @@ p {
     background-size:cover;
     background-repeat:no-repeat;
     background-position:0px 0px;  
-    height: 100vh;
+    
      }
-
 
 #learner {
     color: #b2b59d;
-    grid-area: 1 / span 2;
+    grid-area: 1 / 3;
     margin: 25px;
     
 }
 #cogs {
-    grid-area: 1 / 3 ;
-    justify-content: center;
+    grid-area: 1 / 4 ;
+    justify-self: start;
     margin-top: 30px;
 }
 
-
+#learner-info {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
 
 
 #fourth-container {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     background-color: white;
     background-size:cover;
     background-repeat:no-repeat;
@@ -119,12 +122,3 @@ p {
     
      }
 
-@media screen (max-width: 800px){
-    #top-container { 
-        width: 100%; 
-    display: block;
-}
-
-    #second-container {
-        display: inline;
-    }
