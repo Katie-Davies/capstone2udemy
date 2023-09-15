@@ -14,7 +14,7 @@ h1 {
 }
 p {
     font-family: 'Raleway', sans-serif;
-    font-size: 3vh;
+    font-size: 2vh;
 }
 
 #top-container {
@@ -40,7 +40,7 @@ p {
 
 .container1 {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     grid-template-rows: 1fr 0.5fr 0.5fr 1fr; 
 }
 
@@ -51,7 +51,7 @@ p {
     margin: 50px;  
 }
 #hero {
-    grid-area: 3 / 1 / 5 / 3;
+    grid-area: 3 / 1 / 4 / 3;
     margin: 50px;
     color: #8c6c5f;
     font-weight: bold;
@@ -61,8 +61,8 @@ p {
 
 .container2 {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 15%) ;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-rows: repeat(6, 100px);
 }
 #teacher {
     grid-area: 1 / span 2;
@@ -74,15 +74,20 @@ p {
     grid-column-start: 3;
     margin-top: 50px;
     justify-self: left;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 #teacher-info {
     grid-area: 2 / 1 / 4 / 4;
-    margin-left: 50px;
+    margin-left: 25px;
+    
 }
-
+ß
 @media screen (max-width: 800px){
     #top-container { 
-        width: 100%; }
-   
+        width: 100%; 
+    display: block;
 }
+
+    #second-container {
+        display: inline;
+    }
