@@ -76,7 +76,10 @@ p {
     justify-self: left;
     margin-top: 50px;
 }
-
+#teacher-info {
+    grid-area: 2 / 1 / 4 / 4;
+    margin-left: 50px;
+}
 
 @media screen (max-width: 800px){
     #top-container { 
