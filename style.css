@@ -88,7 +88,7 @@ h3 {
     
 }
 
-#third-container {
+.third-container {
     display: flex;
     justify-content: center;
     background-color: white;
@@ -117,15 +117,7 @@ h3 {
 }
 
 
-#fourth-container {
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-position:0px 0px;  
-    
-     }
+
 
 #software {
     color: #84997c;
@@ -156,3 +148,21 @@ h3 {
   margin-right: auto;
   width: 50%;
 }
+.fourth-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:0px 0px;  
+}
+
+.fourth-container div h1 {
+    flex-direction: column;
+    color:#84997c;
+    margin: 100px;
+}
+.fourth-container div p {
+    margin: 100px;
