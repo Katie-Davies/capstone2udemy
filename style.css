@@ -1,11 +1,5 @@
 /*  headers: font-family: 'Playfair Display', serif;
 main text: font-family: 'Raleway', sans-serif; 
-
-d5bdaf
-green : a3b18a
-pink : f3dad8
-dark pink: c78283
-dark brown: a27965
 */
 
 h1 {
@@ -19,6 +13,7 @@ p {
 h3 {
     text-align: center;
     font-family: 'Playfair Display', serif;
+    color: white;
 }
 
 #top-container {
@@ -141,13 +136,17 @@ h3 {
     background-repeat:no-repeat;
     background-position:0px 0px;
 }
-
+.fifth-container h3 {
+    color:#84997c;
+}
 .mondrian {
     display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
+
+
 .fourth-container {
     display: flex;
     flex-direction: column;
@@ -165,4 +164,12 @@ h3 {
     margin: 100px;
 }
 .fourth-container div p {
+    margin: 100px; }
+
+.contact {
+    display: flex;
+    flex-direction: row;
+}
+.contact img {
     margin: 100px;
+}
